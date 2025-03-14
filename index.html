@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="shortcut icon" href="./images/to-do-list.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <header class="position-relative w-100">
+        <div class="d-flex p-5 align-items-center">
+            <img src="./images/sticky-note.png" width="75" alt="">
+            <h1 class="mainHeader fw-bold ms-2">To-do List</h1>
+        </div>
+        <div class="d-flex justify-content-between align-items-center w-50 mx-auto">
+            <input type="text" placeholder="Enter your task here" id="newTask" class="form-control">
+            <button type="button" id="add" class="btn btn-primary ms-2" onclick="addTask();">Add</button>
+            <button type="button" id="update" class="btn btn-warning ms-2 d-none" onclick="updateTask();">Update</button>
+        </div>
+
+    </header>
+    <section class="gradient-custom-2 pt-5">
+        <div class="container py-5 ">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-12 col-lg-10">
+                    <div class="card mask-custom">
+                        <div class="card-body p-4 text-white">
+                            <div class="text-center pt-3 pb-2">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
+                                    alt="Check" width="60">
+                                <h2 class="my-4">Task List</h2>
+                            </div>
+                            <table class="table text-white mb-0 text-center rounded-2 overflow-hidden">
+                                <thead>
+                                    <tr>
+                                        <th>Task No.</th>
+                                        <th>Task</th>
+                                        <th>status</th>
+                                        <th>Update</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="allTasks">
+                                    <!-- <tr class="fw-normal">
+                                        <td>1</td>
+                                        <td>
+                                            <span>Call Sam For payments</span>
+                                        </td>
+                                        <td>
+                                            <a style="cursor: pointer;" class="update"><i
+                                                    class="fas fa-pen-nib fa-lg text-warning me-3"></i></a>
+                                        </td>
+                                        <td>
+                                            <a style="cursor: pointer;" class="delete"><i
+                                                    class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                                        </td>
+                                    </tr> -->
+                                    <tr>
+                                        <td colspan="5" class="fw-bold">Task List is Empty!</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
